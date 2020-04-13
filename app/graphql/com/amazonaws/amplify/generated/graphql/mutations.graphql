@@ -1,0 +1,7 @@
+# this is an auto generated file. This will be overwritten
+mutation AddUser($name: String, $password: String) {
+  addUser(name: $name, password: $password) {
+    name
+    password
+  }
+}

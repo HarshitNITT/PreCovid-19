@@ -1,0 +1,22 @@
+{
+    "UserAgent": "aws-amplify-cli/2.0",
+    "Version": "1.0",
+    "api": {
+        "plugins": {
+            "awsAPIPlugin": {
+                "Covid": {
+                    "endpointType": "GraphQL",
+                    "endpoint": "https://rf7bj4lvkrdrbkasejbyrzwpx4.appsync-api.us-east-2.amazonaws.com/graphql",
+                    "region": "us-east-2",
+                    "authorizationType": "AWS_IAM"
+                },
+                "Covrest": {
+                    "endpointType": "REST",
+                    "endpoint": "https://xhgcl3kvfk.execute-api.us-east-2.amazonaws.com/aws",
+                    "region": "us-east-2",
+                    "authorizationType": "AWS_IAM"
+                }
+            }
+        }
+    }
+}

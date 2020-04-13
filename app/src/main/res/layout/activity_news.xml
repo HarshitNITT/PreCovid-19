@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlayout2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+</RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlayout1"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:padding="12dp"
+        android:text="Back"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:theme="@style/AppButton.button"
+android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:padding="12dp"
+        android:text="Covid Stats"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:layout_alignParentRight="true"
+        android:theme="@style/AppButton.button"
+
+
+        />
+    <com.google.android.material.textfield.TextInputEditText android:id="@+id/input_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/btn_back"
+        android:layout_marginTop="40dp"
+        android:hint="Comments(Problems Faced)"
+        android:textColorHint="@color/white"
+        android:theme="@style/AppTextFieldLogin"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="12dp"
+        android:text="Login"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:theme="@style/AppButton.button"
+        android:layout_alignParentBottom="true"
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_review"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_comments"
+        android:padding="12dp"
+        android:text="Submit Feedback"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:theme="@style/AppButton.button"
+
+
+        />
+        <TextView
+            android:id="@+id/recent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="15dp"
+            android:textFontWeight="450"
+            android:contentDescription="PreCovid'19"
+            android:textSize="18sp"
+            android:text="Recent News"
+
+            android:background="#66ccaa"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:elevation="2dp"
+
+            android:layout_above="@id/btn_news3"
+            />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_news3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_news2"
+        android:padding="12dp"
+        android:text="Initializing"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:theme="@style/AppButton.button"
+
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_news2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_news1"
+        android:padding="12dp"
+        android:text="Initializing"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:theme="@style/AppButton.button"
+
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_news1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="12dp"
+        android:text="Initializing"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:theme="@style/AppButton.button"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</RelativeLayout>
+</RelativeLayout>

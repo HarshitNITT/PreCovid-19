@@ -1,0 +1,7 @@
+# this is an auto generated file. This will be overwritten
+query GetUser($name: String, $password: String) {
+  getUser(name: $name, password: $password) {
+    name
+    password
+  }
+}

@@ -1,0 +1,12 @@
+ query GetUser($name: String, $password: String) {
+   getUser(name: $name, password: $password) {
+     name
+     password
+   }
+ }
+ mutation AddUser($name: String, $password: String){
+   addUser(name: $name, password: $password) {
+    name
+         password
+    }
+ }

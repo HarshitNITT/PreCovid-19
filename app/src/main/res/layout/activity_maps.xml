@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rlayout_maps">
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coronavirus.precovid.LoginActivity"
+    map:cameraTargetLat="21.146633"
+    map:cameraTargetLng="79.088860"
+    />
+
+
+<com.google.android.material.button.MaterialButton
+android:id="@+id/button1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+android:layout_alignParentEnd="true"
+android:padding="11dp"
+android:layout_margin="1dp"
+    android:layout_toRightOf="@id/button_news"
+android:text="Logout"
+    android:textColor="@color/white"></com.google.android.material.button.MaterialButton>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_centerVertical="true"
+        android:padding="11dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_margin="1dp"
+        android:layout_centerHorizontal="true"
+        android:text="Get News"
+        android:textColor="@color/white"></com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/button_news"
+            android:layout_alignParentStart="true"
+            android:padding="11dp"
+            android:layout_margin="1dp"
+            android:textColor="@color/white"
+            android:text="Share"
+            android:drawableRight="@drawable/ic_share_black_24dp"></com.google.android.material.button.MaterialButton>
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--          -->
+<!--            >-->
+<!--        <com.google.android.material.textfield.TextInputEditText android:id="@+id/EditText"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        </com.google.android.material.textfield.TextInputEditText>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+<!--      -->
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textview1"
+            android:layout_marginTop="8dp"
+
+            android:contentDescription="PreCovid'19"
+            android:textSize="26sp"
+            android:text="PreCovid'19"
+            android:background="#66ccaa"
+            android:textFontWeight="450"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:elevation="2dp"
+            android:alpha="0"
+            />
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="15dp"
+            android:textFontWeight="450"
+            android:contentDescription="PreCovid'19"
+            android:textSize="26sp"
+            android:text="PreCovid'19"
+            android:layout_above="@+id/textview2"
+            android:background="#66ccaa"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:elevation="2dp"
+            android:alpha="0"
+            />
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:textFontWeight="450"
+        android:contentDescription="PreCovid'19"
+        android:textSize="12sp"
+        android:text="Please carry Masks with You."
+        android:layout_above="@+id/textview3"
+        android:background="#66ccaa"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:elevation="2dp"
+        android:alpha="0"
+        />
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:textFontWeight="450"
+        android:contentDescription="PreCovid'19"
+        android:textSize="12sp"
+        android:text="If the Distance > 500m then wash you hands as soon as you reach home"
+        android:layout_above="@id/button_info"
+        android:background="#66ccaa"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:elevation="2dp"
+        android:alpha="0"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:padding="10dp"
+        android:layout_toRightOf="@id/button_aqi"
+        android:textFontWeight="450"
+        android:textSize="12sp"
+        android:text="Info"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#66ccaa"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_weight = "1"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_aqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight = "1"
+        android:layout_margin="1dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textFontWeight="450"
+        android:textSize="12sp"
+        android:text="AQI"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:elevation="2dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_dist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:padding="10dp"
+        android:textFontWeight="450"
+        android:textSize="12sp"
+        android:text="Distance"
+
+        android:layout_toLeftOf="@id/button_aqi"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#66ccaa"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:elevation="2dp"
+        />
+
+</RelativeLayout>
